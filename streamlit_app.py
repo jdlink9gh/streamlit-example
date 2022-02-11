@@ -22,9 +22,10 @@ dd = st.selectbox("Prediction Window", ("1hr", "6hr", "12hr"))
 pb = st.button("Make Prediction")
 state = SessionState.get(df=data)
 data = pd.DataFrame(columns=["time", "pred"])
-t = st.table(data=data)
+t = st.dataframe(data)
 if pb:
     state.df = state.df.append({'time': 1, "pred': 2})
+    st.dataframe(state.df)
 #     Point = namedtuple('Point', 'x y')
 #     data = []
 
