@@ -20,12 +20,12 @@ import SessionState
 #     num_turns = st.slider("Number of turns in spiral", 1, 100, 9)
 dd = st.selectbox("Prediction Window", ("1hr", "6hr", "12hr"))
 pb = st.button("Make Prediction")
-state = SessionState.get(df=data)
+# state = SessionState.get(df=data)
 data = pd.DataFrame(columns=["time", "pred"])
 t = st.dataframe(data)
 if pb:
-    state.df = state.df.append({'time': 1, "pred': 2})
-    st.dataframe(state.df)
+#     state.df = state.df
+    st.dataframe(data.append({'time': 1, "pred': 2}))
 #     Point = namedtuple('Point', 'x y')
 #     data = []
 
