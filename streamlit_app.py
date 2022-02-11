@@ -22,7 +22,7 @@ pb = st.button("Make Prediction")
 
 t = st.empty()
 if pb:
-    st.write(dd.value)
+    st.write(dd)
 #     Point = namedtuple('Point', 'x y')
 #     data = []
 
