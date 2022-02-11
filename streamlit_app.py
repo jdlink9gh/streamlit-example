@@ -25,8 +25,9 @@ data = pd.DataFrame(columns=["time", "pred"])
 t = st.dataframe(data)
 if pb:
 # #     state.df = state.df
-    data = data.loc[df.size+1] = [1,2]
-    t = dt.dataframe(data)
+    st.write(df.size)
+#     data = data.loc[df.size+1] = [1,2]
+#     t = dt.dataframe(data)
 #     t = st.dataframe(data.append({'time': 1, "pred': 2}))
 #     Point = namedtuple('Point', 'x y')
 #     data = []
