@@ -23,9 +23,9 @@ pb = st.button("Make Prediction")
 # state = SessionState.get(df=data)
 data = pd.DataFrame(columns=["time", "pred"])
 t = st.dataframe(data)
-# if pb:
+if pb:
 # #     state.df = state.df
-#     st.dataframe(data.append({'time': 1, "pred': 2}))
+    t = st.dataframe(data.append({'time': 1, "pred': 2}))
 #     Point = namedtuple('Point', 'x y')
 #     data = []
 
