@@ -4,7 +4,7 @@ import math
 import pandas as pd
 import streamlit as st
 import time
-# import SessionState 
+import SessionState 
 
 """
 # DodecaTech Cryptovoyant!
@@ -20,7 +20,7 @@ import time
 #     num_turns = st.slider("Number of turns in spiral", 1, 100, 9)
 dd = st.selectbox("Prediction Window", ("1hr", "6hr", "12hr"))
 pb = st.button("Make Prediction")
-# state = SessionState.get(df=data)
+state = SessionState.get(df=data)
 data = pd.DataFrame(columns=["time", "pred"])
 t = st.dataframe(data)
 if pb:
