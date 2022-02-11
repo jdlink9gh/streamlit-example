@@ -21,9 +21,8 @@ dd = st.selectbox("Prediction Window", ("1hr", "6hr", "12hr"))
 pb = st.button("Make Prediction")
 
 t = st.empty()
-if st.button('add'):
-#     result = add(1, 2)
-    st.write('test')
+if pb:
+    st.write(dd.value)
 #     Point = namedtuple('Point', 'x y')
 #     data = []
 
