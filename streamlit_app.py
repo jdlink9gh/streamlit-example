@@ -19,8 +19,7 @@ import time
 #     num_turns = st.slider("Number of turns in spiral", 1, 100, 9)
 dd = st.selectbox("Prediction Window", ("1hr", "6hr", "12hr"))
 pb = st.button("Make Prediction")
-
-t = st.empty()
+t = st.table()
 if pb:
     st.write(dd)
 #     Point = namedtuple('Point', 'x y')
