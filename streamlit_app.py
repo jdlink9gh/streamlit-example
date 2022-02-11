@@ -3,6 +3,7 @@ import altair as alt
 import math
 import pandas as pd
 import streamlit as st
+import time
 
 """
 # DodecaTech Cryptovoyant!
@@ -20,7 +21,19 @@ dd = st.selectbox("Prediction Window", ("1hr", "6hr", "12hr"))
 pb = st.button("Make Prediction")
 
 t = st.empty()
+end_of_loop = False 
+counter = 1
 
+while (end_of_loop==False):
+    t.write('Counter: ' + str(counter))
+    if (counter % 10 ==0) :
+        t = st.empty()
+
+    counter += 1
+    if (counter > 100) :
+        end_of_loop = True
+
+    time.sleep(0.2)
 #     Point = namedtuple('Point', 'x y')
 #     data = []
 
