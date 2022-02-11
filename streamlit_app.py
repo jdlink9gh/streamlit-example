@@ -25,7 +25,7 @@ data = pd.DataFrame(columns=["time", "pred"])
 t = st.dataframe(data)
 if pb:
 # #     state.df = state.df
-    st.write(df.size)
+    st.write(data.size)
 #     data = data.loc[df.size+1] = [1,2]
 #     t = dt.dataframe(data)
 #     t = st.dataframe(data.append({'time': 1, "pred': 2}))
