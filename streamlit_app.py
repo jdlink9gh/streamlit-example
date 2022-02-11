@@ -4,7 +4,7 @@ import math
 import pandas as pd
 import streamlit as st
 import time
-import SessionState 
+# import SessionState 
 
 """
 # DodecaTech Cryptovoyant!
